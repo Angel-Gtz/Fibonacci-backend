@@ -24,7 +24,6 @@ app.get('/api/fibonacci/:num', (req: Request, res: Response) => {
     }
 
     const result: number = fibonacci(num)
-    console.log(result)
     res.status(200).json({
         result
     })
